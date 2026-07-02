@@ -149,6 +149,12 @@ details p { margin: 14px 0 0; color: var(--text); line-height: 1.75; }
 .delay-1 { transition-delay: .1s; }
 .delay-2 { transition-delay: .18s; }
 
+@media (max-width: 1180px) {
+  .hero-copy { margin: 0 auto; text-align: center; }
+  .hero-desc { margin-left: auto; margin-right: auto; }
+  .hero-badges, .hero-actions { justify-content: center; }
+}
+
 @media (max-width: 980px) {
   .container { width: min(100% - 32px, var(--container)); }
   .section-pad { padding: 80px 0; }
@@ -190,7 +196,9 @@ details p { margin: 14px 0 0; color: var(--text); line-height: 1.75; }
   .hero-grid { min-height: calc(100svh - 170px); text-align: center; }
   .hero-copy { display: flex; flex-direction: column; max-width: none; min-height: inherit; }
   .hero-desc { margin-left: auto; margin-right: auto; font-size: 18px; }
-  .hero-actions { justify-content: center; margin-top: auto; }
+  .hero-badges { justify-content: center; width: min(100%, 720px); margin-left: auto; margin-right: auto; }
+  .hero-actions { justify-content: center; width: min(100%, 720px); margin: auto auto 0; }
+  .hero-actions .btn-primary { width: 100%; }
 
   .steps-grid { grid-template-columns: repeat(3, 1fr); }
   .feature-video { min-height: 0; }
@@ -218,12 +226,14 @@ details p { margin: 14px 0 0; color: var(--text); line-height: 1.75; }
       min(122vw, 560px) auto;
   }
   .hero-grid { min-height: 700px; }
+  .hero-copy { width: 100%; }
   .hero h1 { font-size: 34px; }
   .hero-desc, .section-desc { font-size: 16px; line-height: 1.72; }
-  .hero-badges { justify-content: center; gap: 8px; margin-top: auto; }
+  .hero-badges { width: calc(100% - 32px); justify-content: center; gap: 8px; margin: auto auto 0; }
   .hero-badges span { flex: 1 1 0; justify-content: center; min-width: 0; padding: 8px 8px; font-size: 13px; white-space: nowrap; }
   .hero-badges span::before { width: 18px; height: 18px; font-size: 11px; }
-  .hero-actions { display: grid; grid-template-columns: 1fr; margin-top: 12px; }
+  .hero-actions { display: grid; grid-template-columns: 1fr; width: calc(100% - 32px); margin: 12px auto 0; }
+  .hero-actions .btn-primary { min-width: 0; }
   .btn { width: 100%; min-height: 54px; }
   h2 { font-size: 29px; line-height: 1.28; }
   .steps-grid { grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 34px; }
