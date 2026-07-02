@@ -220,12 +220,12 @@ details p { margin: 14px 0 0; color: var(--text); line-height: 1.75; }
     padding-bottom: 42px;
     background-position:
       center,
-      center 48%;
+      center 30%;
     background-size:
       auto,
       min(122vw, 560px) auto;
   }
-  .hero-grid { min-height: 640px; }
+  .hero-grid { min-height: 620px; }
   .hero-copy { width: 100%; }
   .hero h1 { font-size: 34px; }
   .hero-desc, .section-desc { font-size: 16px; line-height: 1.72; }
